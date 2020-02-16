@@ -18,7 +18,7 @@ https://github.com/neechbear/tiddlywiki-gce.
 ## Manual Execution
 
 ```
-$ docker run -p 8080:8080 --name mywiki nicolaw/tiddlywiki
+$ docker run -p 8080:8080 --name mywiki spirit1431007/tiddlywiki-arm
 ```
 
 Open your browser to http://localhost:8080 to access the TiddlyWiki.
@@ -58,7 +58,7 @@ Tiddler data to be written to that location on your local filesystem.
 
 ```
 $ docker run -p 8080:8080 -v "$HOME/wikidata:/var/lib/tiddlyiki" \
-    --name mywiki nicolaw/tiddlywiki
+    --name mywiki spirit1431007/tiddlywiki-arm
 ```
 
 In the case of operating TiddlyWiki from systemd, the Docker volume has the
@@ -86,7 +86,7 @@ password authentication.
 
 ```
 $ docker run -p 8080:8080 -e "TW_USERNAME=$USER" -e "TW_PASSWORD=hunter2" \
-    --name mywiki nicolaw/tiddlywiki
+    --name mywiki spirit1431007/tiddlywiki-arm
 ```
 
 Similarly if you are using systemd to start your TiddlyWiki, uncomment and
